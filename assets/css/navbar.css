@@ -1,0 +1,25 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size);
+}
+.logo{
+    justify-content: start;
+    align-items: center;
+    width: 30%;
+    display: flex;
+    font-size: var(--font-size);
+}
+.icono{
+    width: 70px;
+}
+
+.nav-menu{
+    margin-right: 10px;
+    width:70%;
+    border: solid 1px blue; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    

@@ -1,0 +1,13 @@
+/* .btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border-radius: 8px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background-color: var(--color-secondary);
+} */

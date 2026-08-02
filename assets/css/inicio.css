@@ -1,4 +1,4 @@
-/* .btn{
+.btn {
     display: inline-block;
     padding: 12px 30px;
     background-color: var(--color-primary);
@@ -8,23 +8,25 @@
     transition: var(--transition);
 }
 
-.btn:hover{
+.btn:hover {
     background-color: var(--color-secondary);
-} */
+}
+
 /* Slider */
-.hero{    
+.hero {
     width: 100%;
-    height: 850px;
-    margin: 25px opx 25px 0px;
+    height: 680px;
     overflow: hidden;
     position: relative;
 }
-.slider{
+
+.slider {
     width: 100%;
     height: 100%;
     position: relative;
 }
-.slide{
+
+.slide {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -35,12 +37,14 @@
     opacity: 0;
     transition: .6s;
 }
-.slide img{
+
+.slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.slide-content{
+
+.slide-content {
     position: absolute;
 
     top: 50%;
@@ -51,26 +55,106 @@
     color: white;
     font-size: var(--font-size);
 }
-.btn{
-    color: var(--color-primary);
+
+.btn {
+    color: var(--color-light);
 }
-.slide.active{
+
+.slide.active {
     opacity: 1;
 }
+
 .prev,
-.next{
+.next {
 
-    position:absolute;
+    position: absolute;
 
-    top:50%;
+    top: 50%;
 
-    transform:translateY(-50%);
+    transform: translateY(-50%);
 
-    cursor:pointer;
+    cursor: pointer;
 }
-.prev{
-    left:20px;
+
+.prev {
+    left: 20px;
 }
-.next{
-    right:20px;
+
+.next {
+    right: 20px;
+}
+
+/* horario */
+.horario {
+    margin: 25px 0px 25px 0px;
+    /* border: solid 1px red; */
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/assets/img/home/ChatGPT\ Image\ 1\ ago\ 2026\,\ 19_41_31.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor-horario {
+    border: solid 2px rgb(0, 255, 60);
+    width: 80%;
+    height: 100%;
+
+}
+
+.fecha-horario {
+    /* border: solid 3px blueviolet; */
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.horario-item {
+    /* border: solid 1px; */
+    width: 33.5%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;    
+}
+.horario-item:not(:last-child){
+    border-right: 2px solid var(--color-light);
+}
+.horario-item h3{
+    color: red;
+}
+
+.titulo-horario {
+    /* border: solid 2px yellowgreen; */
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+
+.titulo-horario h2 {
+    margin: 0px 15px 0px 15px;
+    font-size: var(--font-size);
+    text-transform: uppercase;
+}
+
+.linea {
+    border: solid 2px white;
+    width: 36.8%;
 }

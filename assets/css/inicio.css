@@ -6,10 +6,15 @@
     border-radius: 8px;
     text-align: center;
     transition: var(--transition);
+    font-weight: bold;
+    border: solid 2px var(--color-secondary);
 }
 
 .btn:hover {
     background-color: var(--color-secondary);
+    color: var(--color-light);
+    font-weight: bold;
+    border: solid 2px var(--color-primary);
 }
 
 /* Slider */
@@ -36,6 +41,7 @@
 
     opacity: 0;
     transition: .6s;
+    pointer-events: none;
 }
 
 .slide img {
@@ -62,18 +68,32 @@
 
 .slide.active {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .prev,
 .next {
-
     position: absolute;
-
     top: 50%;
-
     transform: translateY(-50%);
-
     cursor: pointer;
+    background-color: transparent;
+    width: 20px;
+    height: 50px;
+    font-size: 50px;
+    color: var(--color-light);  
+    border: none;
+    transition: var(--transition); 
+}
+
+.prev:hover{
+    color: var(--color-primary);
+    font-size: 60px;    
+}
+
+.next:hover{
+    color: var(--color-primary);
+    font-size: 60px;
 }
 
 .prev {
@@ -95,18 +115,18 @@
     flex-direction: column;
     justify-content: center;
     background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/assets/img/home/ChatGPT\ Image\ 1\ ago\ 2026\,\ 19_41_31.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/assets/img/home/bgHorarioEvento.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.contenedor-horario {
+/* .contenedor-horario {
     border: solid 2px rgb(0, 255, 60);
     width: 80%;
     height: 100%;
 
-}
+} */
 
 .fecha-horario {
     /* border: solid 3px blueviolet; */
@@ -116,10 +136,11 @@
     justify-content: space-between;
     align-items: center;
     font-size: var(--font-size);
-    background-color: rgba(255, 255, 255, 0.2);
+    /* background-color: rgba(255, 255, 255, 0.2); */
     border-radius: 8px;
     margin-bottom: 15px;
 }
+
 .horario-item {
     /* border: solid 1px; */
     width: 33.5%;
@@ -129,12 +150,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1;    
+    flex: 1;
 }
-.horario-item:not(:last-child){
+
+.horario-item:not(:last-child) {
     border-right: 2px solid var(--color-light);
 }
-.horario-item h3{
+
+.horario-item h3 {
     color: red;
 }
 
@@ -157,4 +180,59 @@
 .linea {
     border: solid 2px white;
     width: 36.8%;
+}
+
+/* DISEÑO DE EVENTOS RECIENTES */
+
+.eventos {
+    margin: 25px 0px 25px 0px;
+    /* border: solid 1px red; */
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/assets/img/home/bgHorarioEvento.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.titulo-eventos {
+    /* border: solid 2px yellowgreen; */
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+
+.titulo-eventos h2 {
+    margin: 0px 15px 0px 15px;
+    font-size: var(--font-size);
+    text-transform: uppercase;
+}
+
+.imagenes-eventos {
+    /* border: solid 2px yellowgreen; */
+    display: flex;
+    gap: 25px;    
+}
+
+.evento{
+    overflow: hidden;
+}
+.evento img {
+    width: 250px;    
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.evento:hover img {
+    transform: scale(1.5);
+}
+.eventos .btn{
+    margin-top: 25px;
 }

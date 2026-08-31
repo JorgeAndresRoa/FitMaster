@@ -41,4 +41,5 @@
 .nav-menu a.active{
     color: var(--color-primary);
     font-weight: var(--font-bold);
+    font-size: 30px;
 }

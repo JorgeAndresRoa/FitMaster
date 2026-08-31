@@ -13,6 +13,9 @@
     --transition: .3s ease;
 
     /* Tamaño de fuente titulo */
-    --font-size: 25px
+    --font-size: 25px;
+
+    /* Tamaño fuente texto */
+    --font-text: 20px;
 
 }

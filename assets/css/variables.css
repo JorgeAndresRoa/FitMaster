@@ -18,4 +18,10 @@
     /* Tamaño fuente texto */
     --font-text: 20px;
 
+    /* Tamaño menu activo */
+    --font-active: 30px;
+
+    /* Tamaño menu activo */
+    --font-subMenu: 15px;
+
 }

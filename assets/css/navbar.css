@@ -1,11 +1,12 @@
-.navbar{
+.navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     font-size: var(--font-size);
     background-color: black;
 }
-.logo{
+
+.logo {
     justify-content: start;
     align-items: center;
     width: 30%;
@@ -14,32 +15,87 @@
     color: var(--color-light);
     text-transform: uppercase;
 }
-.logo span{
+
+.logo span {
     color: var(--color-primary);
 }
-.icono{
+
+.icono {
     width: 70px;
 }
 
-.nav-menu{
+.nav-menu {
     margin-right: 10px;
-    width:70%;    
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}    
-.nav-menu a{
+}
+
+.nav-menu a {
     color: var(--color-light);
     transition: var(--transition);
     text-transform: uppercase;
 }
 
-.nav-menu a:hover{
+.nav-menu a:hover {
     color: var(--color-primary);
 }
 
-.nav-menu a.active{
+.nav-menu a.active {
     color: var(--color-primary);
     font-weight: var(--font-bold);
-    font-size: 30px;
+    font-size: var(--font-active);
+}
+
+/* Contenedor del menú desplegable */
+.dropdown {
+    position: relative;
+}
+
+/* Submenú oculto */
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 180px;
+
+    background-color: var(--color-secondary);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: var(--transition);
+
+    z-index: 100;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px 1px rgba(250, 250, 250, 0.5);
+-webkit-box-shadow: 1px 1px 8px 1px var(--color-light);
+}
+
+/* Mostrar submenú */
+.dropdown:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+    
+}
+
+/* Opciones del submenú */
+.submenu a {
+    display: block;
+    padding: 12px 15px;
+    color: var(--color-light);
+    font-size: var(--font-subMenu);    
+}
+
+/* Hover de las opciones */
+.submenu a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border-radius: 8px;
 }

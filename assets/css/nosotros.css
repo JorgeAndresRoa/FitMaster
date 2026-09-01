@@ -1,21 +1,24 @@
 /* Contenedor principal */
 .desplegable {
-  border: 1px solid #ccc;
   border-radius: 6px;
-  background-color: #fff;
-  max-width: 400px;
+  background-color: var(--color-bg);
+  width: 100%;
   overflow: hidden;
+  font-size: var(--font-text);
 }
 
 /* El botón / título */
 .desplegable-titulo {
   padding: 14px;
+  color: var(--color-primary);
   font-weight: bold;
   cursor: pointer;
-  list-style: none; /* Quita la flecha por defecto en la mayoría de navegadores */
+  list-style: none;
+  /* Quita la flecha por defecto en la mayoría de navegadores */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 /* Quita la flecha por defecto en Safari */
@@ -38,6 +41,72 @@
 /* Contenedor del texto oculto */
 .desplegable-contenido {
   padding: 14px;
-  border-top: 1px solid #eee;
-  background-color: #f9f9f9;
+  /* border-top: 1px solid var(--color-light); */
+  background-color: var(--color-bg);
+  height:200px ;
 }
+
+/* modificaciones de la seccion de historia header */
+
+.historySection {  width: 100%;
+  
+}
+
+/* lineas de acompañamiento de los titulos */
+.historySection .linea {
+  border: solid 2px var(--color-primary);
+  width: 36.8%;
+}
+
+.linea {
+  border: solid 2px var(--color-light);
+  width: 36.8%;
+  height: 0;
+}
+
+/* titulos de doble color */
+span {
+  color: var(--color-primary);
+}
+
+/* SECCION DE HISTORIA */
+.titulos h2{
+  color: var(--color-light);
+}
+.historySection {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg);
+}
+
+.historySection .titulos {
+  width: 80%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.historySection .titulos h2 {
+  width: 27%;
+}
+
+.historySection .linea {
+  border: solid 2px var(--color-primary);
+  width: 73%;
+  height: 0;
+}
+
+.textoHistoria {
+  display: flex;
+  flex-direction: column;  
+  font-size: var(--font-text);  
+  width: 80%;
+  height: 90%;
+  color: var(--color-light);
+}
+

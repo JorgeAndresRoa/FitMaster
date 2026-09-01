@@ -174,7 +174,7 @@
 .titulo-horario h2 {
     margin: 0px 15px 0px 15px;
     font-size: var(--font-size);
-    text-transform: uppercase;
+    text-transform: uppercase;    
 }
 
 .linea {

@@ -26,3 +26,9 @@ a{
     text-decoration:none;
     color: var(--color-light);
 }
+/* titulos de los temas princiaples de todas las paginas */
+.titulos h2 {
+    margin: 0px 15px 0px 15px;
+    font-size: var(--font-size);
+    text-transform: uppercase;
+}

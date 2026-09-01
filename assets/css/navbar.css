@@ -50,7 +50,7 @@
 
 /* Contenedor del menú desplegable */
 .dropdown {
-    position: relative;
+    position: relative;    
 }
 
 /* Submenú oculto */
@@ -59,8 +59,7 @@
     top: 100%;
     left: 0;
 
-    min-width: 180px;
-
+    min-width: 230px;    
     background-color: var(--color-secondary);
 
     opacity: 0;

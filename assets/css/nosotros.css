@@ -1,15 +1,16 @@
-/* Contenedor principal */
+/*! Contenedor principal */
 .desplegable {
   border-radius: 6px;
   background-color: var(--color-bg);
   width: 100%;
   overflow: hidden;
-  font-size: var(--font-text);
+  font-size: var(--font-text);  
+  /* border: solid 2px white; */
 }
 
 /* El botón / título */
 .desplegable-titulo {
-  padding: 14px;
+  padding: 15px;
   color: var(--color-primary);
   font-weight: bold;
   cursor: pointer;
@@ -30,7 +31,7 @@
 .desplegable-titulo::after {
   content: "▶";
   font-size: 0.8rem;
-  transition: transform 0.2s ease;
+  transition: transform 0.5s ease;
 }
 
 /* Rota la flecha cuando el contenedor está abierto [open] */
@@ -43,13 +44,13 @@
   padding: 14px;
   /* border-top: 1px solid var(--color-light); */
   background-color: var(--color-bg);
-  height:200px ;
+  height: 200px;
 }
 
-/* modificaciones de la seccion de historia header */
+/*! modificaciones de la seccion de historia header */
 
-.historySection {  width: 100%;
-  
+.historySection {
+  width: 100%;   
 }
 
 /* lineas de acompañamiento de los titulos */
@@ -69,13 +70,14 @@ span {
   color: var(--color-primary);
 }
 
-/* SECCION DE HISTORIA */
-.titulos h2{
+/*! SECCION DE HISTORIA */
+.titulos h2 {
   color: var(--color-light);
 }
+
 .historySection {
   width: 100%;
-  min-height: 400px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,10 +105,239 @@ span {
 
 .textoHistoria {
   display: flex;
-  flex-direction: column;  
-  font-size: var(--font-text);  
+  flex-direction: column;
+  font-size: var(--font-text);
   width: 80%;
   height: 90%;
   color: var(--color-light);
 }
+
+/*! SECCION IDENTIDAD INSTITUCIONAL  */
+#identity {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 320px;
+  background-color: var(--color-bg);
+}
+
+.titulosIdentity {
+  /* border: solid 2px yellowgreen; */
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.titulosIdentity h2 {
+  text-align: center;
+  width: 43%;
+  margin: 0px 15px 0px 15px;
+  font-size: var(--font-size);
+  text-transform: uppercase;
+}
+
+.linea {
+  border: solid 2px var(--color-light);
+  width: 53%;
+}
+
+/*!TARJETAS INDENTIDADES  */
+
+.tarjetasIdentity{  
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 45px;
+}
+.tarjetasIdentity .mision, .vision, .valores{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;  
+  align-items: center;
+  width: 100%;
+  height: 230px; 
+  margin-top: 0px; 
+  border-radius: 8px;
+  border: solid 2px var(--color-secondary);
+  background-color: var(--color-light);
+}
+.identidadTitulo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+  font-size: var(--font-active);  
+}
+.identidadTitulo i{
+  margin-top: 25px;
+}
+.tarjetasIdentity p{
+  font-size: var(--font-text);
+  color: var(--color-secondary);
+}
+
+/*! PERFIL DEL STAFF */
+
+/*? Titulo sección  */
+.titulosStaff {
+  /* border: solid 2px yellowgreen; */
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.titulosStaff h2 {
+  text-align: center;
+  width: 43%;
+  margin: 0px 15px 0px 15px;
+  font-size: var(--font-size);
+  text-transform: uppercase;
+}
+
+.linea {
+  border: solid 2px var(--color-light);
+  width: 53%;
+}
+
+/*? tarjetas Staff  */
+
+#perfilSatff { /* Corregido: agregué el '#' ya que en tu HTML es un id */
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../img/home/bgHorarioEvento.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+.tarjetasSatff {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;  
+  height: 240px; /* Le damos altura a la sección de tarjetas */
+}
+
+/* --- AQUÍ EMPIEZA EL EFECTO 3D INTEGRADO CON TUS ESTILOS --- */
+
+.infoTarjeta {  
+  width: 500px;  /* Cambiado a ancho fijo para que el 3D no se deforme al girar */
+  height: 250px; /* Alto fijo adecuado para tu sección de 320px */
+  perspective: 1000px; /* Añadido: Obligatorio para el efecto de profundidad */
+}
+
+/* El contenedor interno que realmente va a rotar */
+.tarjeta-interna {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d; /* Permite que las caras se comporten en 3D */  
+}
+
+/* El giro ocurre cuando pasas el mouse por encima de la tarjeta */
+.infoTarjeta:hover .tarjeta-interna {
+  transform: rotateY(180deg);
+}
+
+/* Reglas comunes para el frente y la espalda */
+.tarjeta-frente, .tarjeta-atras, .tarjeta-atras2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta la cara que queda al reverso */
+  border-radius: 8px;
+  display: flex; /* Recuperamos tu diseño flex aquí */
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARA FRONTAL: Mantiene exactamente tu estructura original */
+.tarjeta-frente {
+  background-color:var(--color-bg); /* O el color que desees */
+  border: solid 3px var(--color-primary);
+}
+
+/* CARA TRASERA: Nueva cara que se mostrará al girar */
+.tarjeta-atras {
+  background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../img/nosotros/staff/fondoJuanEsteban.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  /* background-color:var(--color-bg);  */
+  /* Fondo oscuro de ejemplo */  
+  transform: rotateY(180deg); /* Se inicializa invertida */
+  flex-direction: column;
+  padding: 15px;
+  text-align: center;
+  box-sizing: border-box;  
+  border: 3px solid var(--color-primary);
+}
+/* CARA TRASERA: Nueva cara que se mostrará al girar */
+.tarjeta-atras2 {
+  background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../img/nosotros/staff/fondoAngelFerro.png");
+    background-size: cover;
+    background-position: start;
+    background-repeat: no-repeat;
+  /* background-color:var(--color-bg);  */
+  /* Fondo oscuro de ejemplo */  
+  transform: rotateY(180deg); /* Se inicializa invertida */
+  flex-direction: column;
+  padding: 15px;
+  text-align: center;
+  box-sizing: border-box;  
+  border: 3px solid var(--color-primary);
+}
+
+/* --- TUS ESTILOS INTERNOS ORIGINALES (Mantenidos) --- */
+
+.infoTarjeta img {  
+  border-radius: 50%;
+  width: 150px;
+  height: 150px; 
+  border: solid 2px var(--color-primary); 
+}
+
+.infoStaff {  
+  width: 60%;
+  height: 100%; /* Ajustado al 100% para que use el alto de la tarjeta */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+.infoStaff h3{
+  color: var(--color-primary);
+  font-size: var(--font-size);
+}
+.infoStaff p{
+  color: var(--color-light);
+  font-size: var(--font-text);
+  margin-left: 50px;
+}
+.tarjeta-atras h3, .tarjeta-atras2 h3{
+  color: var(--color-primary);
+  font-size: var(--font-size);
+}
+.tarjeta-atras p, .tarjeta-atras2 p{
+  color: var(--color-light);
+  font-size: var(--font-subMenu);
+}
+
 

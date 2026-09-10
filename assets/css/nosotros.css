@@ -212,7 +212,7 @@ span {
 
 /*? tarjetas Staff  */
 
-#perfilSatff { /* Corregido: agregué el '#' ya que en tu HTML es un id */
+#perfilStaff { /* Corregido: agregué el '#' ya que en tu HTML es un id */
   width: 100%;
   height: 320px;
   display: flex;
@@ -339,5 +339,193 @@ span {
   color: var(--color-light);
   font-size: var(--font-subMenu);
 }
+/*! SECCION DE TRAYECTORIA  */
+
+/* se ajustan medidas del contenedor */
+#trayectoria{
+  width: 100%;
+  height: 300px;
+  margin: 15px 0px 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../img/home/bgHorarioEvento.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*? se da estilo al titulo  */
+.tituloTrayectoria{
+  display: flex;  
+  align-items: center;  
+  text-align: center;
+  width: 80%;
+  height: 50px;   
+}
+.tituloTrayectoria h2{
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-size: var(--font-size);
+  width: 30%;
+}
+.tituloTrayectoria .linea {  
+  border: solid 2px var(--color-light);
+  width: 40%;
+}
+/*? estilos al cuerpo de la tarjeta (p ... texto)  */
+.exp{  
+  width: 73%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.exp h3{
+  text-align: center;
+  font-size: var(--font-text);
+  margin: 20px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+.exp p{
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-text);
+  color: var(--color-light);
+}
+
+/*! SECCION TESTIMONIOS  */
+/*? titulo testimonios  */
+.titulosTestimonios{
+  display: flex;  
+  align-items: center;  
+  text-align: center;
+  width: 80%;
+  height: 50px;   
+}
+.titulosTestimonios h2{
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-size: var(--font-size);
+  width: 30%;
+}
+.titulosTestimonios .linea {  
+  border: solid 2px var(--color-light);
+  width: 40%;
+}
 
 
+#testimonios{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 400px;
+  background-color: var(--color-bg);
+}
+
+/*? tarjetas de testimonios  */
+
+.tarjetasTestimonios{  
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 45px;
+}
+.tarjetasTestimonios .test{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;  
+  align-items: center;
+  width: 100%;
+  height: 230px; 
+  margin-top: 0px; 
+  border-radius: 8px;
+  border: solid 2px var(--color-secondary);
+  background-color: var(--color-light);
+}
+
+/*? seccion tarjetas de desplegables  */
+ 
+.desplegableTestimonios {
+  border-radius: 6px;
+  background-color: var(--color-bg);
+  width: 80%;
+  overflow: hidden;
+  font-size: var(--font-text);    
+  display: flex;
+  flex-direction: column;
+
+}
+.tarjetasTestimonios2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 45px;
+  height: 260px;
+}
+.tarjetasTestimonios2 .test{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;  
+  align-items: center;
+  width: 100%;
+  height: 230px; 
+  margin-top: 0px; 
+  border-radius: 8px;
+  border: solid 2px var(--color-secondary);
+  background-color: var(--color-light);
+}
+/* El botón / título */
+.desplegable-titulo-test {
+  padding: 15px;
+  color: var(--color-primary);
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  /* Quita la flecha por defecto en la mayoría de navegadores */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.test h3{  
+  font-size: var(--font-size);
+  color: var(--color-primary); 
+  margin: 25px;  
+}
+.test p{
+  font-size: var(--font-text);
+  color: var(--color-secondary); 
+}
+/* Quita la flecha por defecto en Safari */
+.desplegable-titulo::-webkit-details-marker {
+  display: none;
+}
+
+/* Agrega una flecha personalizada usando un pseudoelemento */
+.desplegable-titulo-test::after {
+  content: "▶";
+  font-size: 0.8rem;
+  transition: transform 0.5s ease;
+}
+
+/* Rota la flecha cuando el contenedor está abierto [open] */
+.desplegableTestimonios[open] .desplegable-titulo-test::after {
+  transform: rotate(90deg);
+}
+
+/* Contenedor del texto oculto */
+.desplegable-contenido {
+  padding: 14px;
+  /* border-top: 1px solid var(--color-light); */
+  background-color: var(--color-bg);
+  height: 200px;
+}

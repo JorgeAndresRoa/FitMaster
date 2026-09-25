@@ -1,0 +1,239 @@
+/* .containerGaleria {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../img/home/bgHorarioEvento.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: solid 1px var(--color-primary);
+} * css * =========================================
+GALERÍA
+   ========================================= */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../img/home/bgHorarioEvento.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: solid 1px var(--color-primary);
+}
+
+.containerGaleria {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+
+}
+
+
+/* =========================================
+TÍTULO
+   ========================================= */
+
+.tituloGaleria {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tituloGaleria h1 {
+    margin-bottom: 15px;
+    color: var(--color-primary);
+    font-size: var(--font-active);
+    text-transform: uppercase;
+}
+
+.tituloGaleria p {
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: var(--font-size);
+    color: var(--color-light);
+}
+
+
+/* =========================================
+FILTROS
+   ========================================= */
+
+.botonesGaleria {
+    margin-bottom: 35px;
+}
+
+.botonesGaleria nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.botonesGaleria button {
+    padding: 12px 25px;
+
+    border: 2px solid #E53935;
+    border-radius: 5px;
+
+    background-color: var(--color-primary);
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-light);
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.botonesGaleria button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+
+    transform: translateY(-2px);
+}
+
+.botonesGaleria button.activo {
+    background-color: var(--color-light);
+    color: var(--color-primary);
+}
+
+
+/* =========================================
+   GALERÍA DE IMÁGENES
+   ========================================= */
+
+.imagenesGaleria {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   IMÁGENES
+   ========================================= */
+
+.imagenesGaleria img {
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+.imagenesGaleria img:hover {
+    transform: scale(1.03);
+    filter: brightness(0.85);
+}
+
+
+/* =========================================
+   DESPLEGABLE "VER MÁS"
+   ========================================= */
+
+.desplegableGaleria {
+    margin-top: 30px;
+}
+
+.desplegable-titulo {
+    width: fit-content;
+    margin: 0 auto;
+
+    padding: 12px 25px;
+
+    border: 2px solid #E53935;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.desplegable-titulo:hover {
+    background-color: #E53935;
+    color: white;
+}
+
+
+/* =========================================
+   CONTENIDO DEL DESPLEGABLE
+   ========================================= */
+
+.desplegableGaleria .imagenesGaleria {
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   RESPONSIVE — TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .imagenesGaleria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE — MÓVIL
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .containerGaleria {
+        padding: 40px 15px;
+    }
+
+    .tituloGaleria h1 {
+        font-size: 2rem;
+    }
+
+    .botonesGaleria nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .botonesGaleria button {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+
+    .imagenesGaleria {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .imagenesGaleria img {
+        height: 240px;
+    }
+
+}

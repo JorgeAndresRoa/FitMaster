@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/servicios.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- barra de menu -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <a href="index.html" class="logo"><img class="icono" src="assets/img/logo/fitMasterLogo-Photoroom.png"
+                    alt="Logo de FitMaster">
+                <h1 class="logo">
+                    <span>Fit</span>Master
+                </h1>
+            </a>
+            <!-- menu -->
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="nosotros.html">Nosotros</a>
+
+                    <ul class="submenu">
+                        <li><a href="nosotros.html">Identidad Institucional</a></li>
+                        <li><a href="nosotros.html">Perfil del staff</a></li>
+                        <li><a href="nosotros.html">trayectoria</a></li>
+                        <li><a href="nosotros.html#testimonios">testimonios</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li class="dropdown">
+                    <a href="servicios.html" class="active">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="nosotros.html">Rutinas personalizadas</a></li>
+                        <li><a href="nosotros.html">nutricion y bienestar</a></li>
+                        <li><a href="nosotros.html">planes corporativos</a></li>
+                        <li><a href="nosotros.html#testimonios">agendar entrenamiento</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="containerServicios">
+        <header class="tituloServicios">
+            <h1>Servicios</h1>
+            <p> Conoce todo lo que Fit Master tiene para ti.
+            </p>
+        </header>
+        <!-- Se realiza seccion de planes y precios -->
+        <section id="planesPrecios">
+            <header class="titulosPlanesPrecios">
+                <div class="linea"></div>
+                <h2>planes y precios</h2>
+                <div class="linea"></div>
+            </header>
+            <div class="tarjetasPlanesPrecios">
+                <div class="test">
+                    <h3>plan básico</h3>
+                    <ul class="ulPlanesPrecios">
+                        <li>Acceso al gimnasio.</li>
+                        <li>Uso de máquinas y zona de cardio.</li>
+                        <li>Evaluación física inicial.</li>
+                        <li>Horario libre de lunes a sábado.</li>
+                    </uL>
+                    <p class="valor">$79.900 mes</p>
+                </div>
+                <div class="test">
+                    <h3>plan intermedio</h3>
+                    <ul class="ulPlanesPrecios">
+                        <li>Todo lo del plan básico.</li>
+                        <li>Clases grupales(Boxeo, MMA Fitnes, Funcional).</li>
+                        <li>Seguimiento mensual.</li>
+                        <li>Asesoría básica de entrenamiento.</li>
+                    </ul>
+                    <p class="valor">$119.900 mes</p>
+                </div>
+                <div class="test">
+                    <h3>plan premium</h3>
+                    <ul class="ulPlanesPrecios">
+                        <li>Todo lo del plan intermedio.</li>
+                        <li>Plan de entrenamiento personalizado.</li>
+                        <li>Seguimiento semanal.</li>
+                        <li>Asesoría nutricional básica.</li>
+                        <li>Prioridad en eventos y talleres.</li>
+                    </ul>
+                    <p class="valor">$179.900 mes</p>
+                </div>
+            </div>
+            <div class="botoneraPlanesPrecios">
+                <div class="linkContacto">
+                    <!-- Botón para ir a otra página -->
+                    <a href="contactenos.html">Adquiere tu plan</a>
+                </div>
+                <div class="botonPop">
+                    <!-- Botón para abrir el popup -->
+                    <button id="openPopup" class="btnPopup">TyC</button>
+                </div>
+                <!-- Estructura del Popup (Oculto por defecto) -->
+                <div id="miPopup" class="popup-overlay">
+                    <div class="popup-content">
+                        <span id="closePopup" class="popup-close">&times;</span>
+                        <h2>Términos y Condiciones</h2>
+                        <div class="popup-text">
+                            <p>Aquí debes escribir todo el texto de tus Términos y Condiciones...</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, accusantium obcaecati minus optio, iusto maiores omnis unde aut corporis sapiente, quos quisquam sed hic dignissimos tempora nam vel! Tempora delectus nihil alias, esse doloribus illum ut itaque nemo odit soluta est eaque, repellendus voluptates doloremque error sit id, a reiciendis quibusdam repudiandae officiis ex! Inventore quis neque accusamus quia qui praesentium asperiores, possimus dignissimos? Earum unde quidem inventore autem deserunt fugit harum. Aliquam, fugit natus nisi architecto dolor sequi. Tempora excepturi beatae corrupti sapiente repellat, libero voluptate maxime earum voluptates ipsa placeat consequatur et reprehenderit dolores sit assumenda nostrum veritatis!</p>
+                        </div>
+                        <button id="closePopupBtn" class="btn-aceptar">Entendido</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- footer con informacion de ubicacion y contacto -->
+    <footer>
+        <h2 class="h2Foot"><span>Contá</span>ctanos</h2>
+        <address class="contacto">
+
+            <article class="tel-contacto">
+                <h3>Teléfono</h3>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+573142533698">+57 314 2533698</a>
+                <a href="tel:+573102636779">+57 310 2636779</a>
+            </article>
+            <article class="dir-contacto">
+                <h3>Dirección</h3>
+                <i class="fa-solid fa-map-location-dot"></i>
+                <a href="https://maps.app.goo.gl/iWwzXCPrDoG6hsaz7" target="_blank">Cl. 127b#89-51, Suba, rincon,
+                    Bogotá</a>
+            </article>
+            <article class="whatsapp-contacto">
+                <h3>WhatsApp</h3>
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://wa.me/573142533698" target="_blank">+57 314 2533698</a>
+            </article>
+            <article class="redes-contacto">
+                <h3>Síguenos</h3>
+                <div class="redes-sociales">
+                    <a href="https://www.instagram.com/fit_masterg/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/fit_masterg/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@fit_ma8ster?_r=1" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/fit_masterg/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+            </article>
+
+        </address>
+
+    </footer>
+    <script src="./assets/js/servicios.js"></script>
+</body>
+
+</html>

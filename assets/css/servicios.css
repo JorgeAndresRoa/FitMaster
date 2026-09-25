@@ -1,0 +1,276 @@
+body {
+    background-image: url("../img/home/bgHorarioEvento.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: solid 1px var(--color-primary);
+}
+
+/*? TITULO */
+
+.tituloServicios {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.tituloServicios h1 {
+    margin-bottom: 15px;
+    color: var(--color-primary);
+    font-size: var(--font-active);
+    text-transform: uppercase;
+}
+
+.tituloServicios p {
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: var(--font-size);
+    color: var(--color-light);
+}
+
+/* ? CONTENEDOR PRINCIPAL */
+
+.containerServicios {
+    width: 100%;
+}
+
+/* ? PLANES Y PRECIOS */
+
+/*? titulo de planes y precios  */
+.titulosPlanesPrecios {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+}
+
+.titulosPlanesPrecios h2 {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: var(--font-size);
+    width: 30%;
+}
+
+.titulosPlanesPrecios .linea {
+    border: solid 2px var(--color-light);
+    width: 40%;
+}
+
+
+#planesPrecios {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 400px;
+}
+
+/*? tarjetas de planes y precios  */
+
+.tarjetasPlanesPrecios {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.tarjetasPlanesPrecios .test {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 230px;
+    border-radius: 8px;
+    border: solid 1px var(--color-light);
+    background-color: var(--color-bg);
+}
+
+.valor {
+    font-weight: bold;
+}
+
+.test h3 {
+    width: 100%;
+    height: 50px;
+    font-size: var(--font-size);
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    padding: 10px;
+    border-radius: 8px 8px 0px 0px;
+    text-transform: uppercase;
+}
+
+.test .valor {
+    font-size: var(--font-size);
+    color: var(--color-light);
+    padding: 10px;
+}
+
+.test ul {
+    font-size: var(--font-text);
+    color: var(--color-light);
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.ulPlanesPrecios {
+    list-style-type: disc;
+    text-align: left;
+}
+
+/* ? BOTONERA PLANES Y PRECIOS */
+
+.botoneraPlanesPrecios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.botoneraPlanesPrecios .linkContacto {
+    display: flex;
+    justify-content: end;
+}
+
+.botoneraPlanesPrecios div button {
+    display: flex;
+    justify-self: end;
+}
+
+/* ? BOTON LINK HACIA CONTACTENOS */
+.botoneraPlanesPrecios a {
+    padding: 10px;
+    background-color: var(--color-primary);
+    min-width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: var(--font-text);
+    border: solid 1px var(--color-bg);
+    transition: var(--transition);
+}
+
+.botoneraPlanesPrecios a:hover {
+    background-color: var(--color-bg);
+    border: solid 1px var(--color-primary);
+}
+
+.botoneraPlanesPrecios .linkContacto {
+    width: 60%;
+}
+
+.botoneraPlanesPrecios .botonPop {
+    width: 35%;
+}
+
+.btnPopup {
+    padding: 8px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: var(--font-text);
+    color: gray;
+    transition: var(--transition);
+}
+
+.btnPopup:hover {
+    background-color: gray;
+    color: gainsboro;
+    font-size: var(--font-text);
+}
+
+/* ? POPUP DEL BOTON TERMINOS Y CONDICIONES */
+
+/* Fondo oscuro detrás del popup */
+.popup-overlay {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caja blanca del popup */
+.popup-content {
+    background-color: var(--color-light);
+    padding: 30px;
+    border-radius: 8px;
+    border: solid 2px var(--color-primary);
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: aparecer 0.3s ease;
+}
+
+/* titulo del popup-content */
+.popup-content h2{
+    color: var(--color-primary);
+}
+/* Área de texto con scroll por si los TyC son largos */
+.popup-text {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: var(--color-bg);
+}
+
+/* Botón de cerrar "X" */
+.popup-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.popup-close:hover {
+    color: #000;
+}
+
+/* Botón de aceptar dentro del popup */
+.btn-aceptar {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.btn-aceptar:hover {
+    background-color: var(--color-bg);
+    border: solid 2px var(--color-primary);
+    
+}
+
+/* Animación de entrada suave */
+@keyframes aparecer {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

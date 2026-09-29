@@ -35,7 +35,7 @@ body {
     width: 100%;
 }
 
-/* ? PLANES Y PRECIOS */
+/* ! PLANES Y PRECIOS */
 
 /*? titulo de planes y precios  */
 .titulosPlanesPrecios {
@@ -152,7 +152,7 @@ body {
     text-align: center;
     border-radius: 8px;
     font-size: var(--font-text);
-    border: solid 1px var(--color-bg);
+    border: solid 1px var(--color-light);
     transition: var(--transition);
 }
 
@@ -216,9 +216,10 @@ body {
 }
 
 /* titulo del popup-content */
-.popup-content h2{
+.popup-content h2 {
     color: var(--color-primary);
 }
+
 /* Área de texto con scroll por si los TyC son largos */
 .popup-text {
     max-height: 250px;
@@ -259,7 +260,7 @@ body {
 .btn-aceptar:hover {
     background-color: var(--color-bg);
     border: solid 2px var(--color-primary);
-    
+
 }
 
 /* Animación de entrada suave */
@@ -273,4 +274,280 @@ body {
         transform: scale(1);
         opacity: 1;
     }
+}
+
+/*! SECCION RUTINAS PERSONALIZADAS */
+
+/*? configuracion seccion rutinas personalizadas */
+#rutinasPersonalizadas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*? titulo de rutinas personalizadas  */
+.titulosRutinasPersonalizadas {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 50px;    
+    width: 100%;
+}
+
+.titulosRutinasPersonalizadas h2 {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: var(--font-size);
+    width: 30%;
+}
+
+.titulosRutinasPersonalizadas .linea {
+    border: solid 2px var(--color-light);
+    width: 35%;
+}
+
+/*? Tarjeta de rutinas personalizadas */
+
+.tarjetaRutinasPersonalizadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 80%;
+    margin-top: 20px;    
+    border-radius: 8px;
+    height: 330px;
+    /* border: solid 2px yellowgreen;     */
+}
+/* ? configurar espacio de la tarjeta interna */
+.tarjetaInterna{
+    display: flex;    
+    width: 100%;    
+    justify-self: center;
+    align-items: center;
+    /* border: solid 2px pink;        */
+}
+
+/* ? configuracion de imagen de tarjeta */
+.tarjetaInterna img{
+    margin-left: 20px;
+    width: 50%;
+    height: 250px;
+    border-radius: 8px;
+    /* border: solid 2px purple;   */
+}
+
+.tarjetaInterna2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    /* border: solid 2px goldenrod; */
+}
+.tarjetaInterna2 p{
+    font-size: var(--font-text);
+    color: var(--color-light);
+}
+
+/*! SECCION NUTRICION Y BIENESTAR */
+
+/*? configuracion seccion rutinas personalizadas */
+#rutinasPersonalizadas2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/*? titulo de rutinas personalizadas  */
+.titulosRutinasPersonalizadas2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 50px;    
+    width: 100%;
+}
+
+.titulosRutinasPersonalizadas2 h2 {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: var(--font-size);
+    width: 30%;
+}
+
+.titulosRutinasPersonalizadas2 .linea {
+    border: solid 2px var(--color-light);
+    width: 35%;
+}
+
+/*? Tarjeta de rutinas personalizadas */
+
+.tarjetaRutinasPersonalizadas2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 80%;
+    margin-top: 20px;    
+    border-radius: 8px;
+    height: 330px;
+    /* border: solid 2px yellowgreen;     */
+}
+/* ? configurar espacio de la tarjeta interna */
+.tarjetaInterna3{
+    display: flex;    
+    width: 100%;    
+    justify-self: center;
+    align-items: center;
+    /* border: solid 2px pink;        */
+}
+
+/* ? configuracion de imagen de tarjeta */
+.tarjetaInterna3 img{
+    margin-right: 20px;
+    width: 50%;
+    height: 250px;
+    border-radius: 8px;
+    /* border: solid 2px purple;   */
+}
+
+.tarjetaInterna4{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;    
+    /* border: solid 2px goldenrod; */
+}
+.tarjetaInterna4 p{
+    font-size: var(--font-text);
+    color: var(--color-light);
+    text-align: justify;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/*! SECCION PLANES CORPORATIVOS  */
+
+
+/*? titulo de planes y precios  */
+.titulosPlanesCorporativos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+}
+
+.titulosPlanesCorporativos h2 {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: var(--font-size);
+    width: 30%;
+}
+
+.titulosPlanesCorporativos .linea {
+    border: solid 2px var(--color-light);
+    width: 40%;
+}
+
+
+#planesCorporativos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 400px;
+}
+
+/*? tarjetas de planes y precios  */
+
+.tarjetasPlanesCorporativos {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.tarjetasPlanesCorporativos .test {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 230px;
+    border-radius: 8px;
+    border: solid 1px var(--color-light);
+    background-color: var(--color-bg);
+}
+
+.valor {
+    font-weight: bold;
+}
+
+.test h3 {
+    width: 100%;
+    height: 50px;
+    font-size: var(--font-size);
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    padding: 10px;
+    border-radius: 8px 8px 0px 0px;
+    text-transform: uppercase;
+}
+
+.test .valor {
+    font-size: var(--font-size);
+    color: var(--color-light);
+    padding: 10px;
+}
+
+.test ul {
+    font-size: var(--font-text);
+    color: var(--color-light);
+    padding: 10px;
+    margin-left: 15px;
+}
+.ulPlanesCorporativos {
+    list-style-type: disc;
+    text-align: left;
+}
+
+/* !AGENDAMIENTO DE ENTRENAMIENTO */
+
+.agendarEntrenamiento{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.agendarEntrenamiento h1{
+    color: var(--color-primary);
+    font-size: 40px;
+}
+.agendarEntrenamiento a{
+    padding: 10px;
+    background-color: var(--color-primary);
+    min-width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: var(--font-text);
+    border: solid 1px var(--color-light);
+    transition: var(--transition);
+}
+.agendarEntrenamiento a:hover {
+    background-color: var(--color-bg);
+    border: solid 1px var(--color-primary);
 }

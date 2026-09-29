@@ -89,6 +89,11 @@ body {
     border-radius: 8px;
     border: solid 1px var(--color-light);
     background-color: var(--color-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.tarjetasPlanesPrecios .test:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
 .valor {
@@ -487,7 +492,13 @@ body {
     border-radius: 8px;
     border: solid 1px var(--color-light);
     background-color: var(--color-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
+
+.tarjetasPlanesCorporativos .test:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+} 
 
 .valor {
     font-weight: bold;
@@ -523,7 +534,7 @@ body {
 
 /* !AGENDAMIENTO DE ENTRENAMIENTO */
 
-.agendarEntrenamiento{
+#agendarEntrenamiento{
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -533,11 +544,11 @@ body {
     justify-content: center;
     gap: 40px;
 }
-.agendarEntrenamiento h1{
+#agendarEntrenamiento h1{
     color: var(--color-primary);
     font-size: 40px;
 }
-.agendarEntrenamiento a{
+#agendarEntrenamiento a{
     padding: 10px;
     background-color: var(--color-primary);
     min-width: 300px;
@@ -551,3 +562,4 @@ body {
     background-color: var(--color-bg);
     border: solid 1px var(--color-primary);
 }
+

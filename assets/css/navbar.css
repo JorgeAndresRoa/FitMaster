@@ -3,7 +3,15 @@
     display: flex;
     justify-content: space-between;
     font-size: var(--font-size);
-    background-color: black;
+    background-color: var(--color-bg);
+    position: fixed;    
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.navbarScroll{
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .logo {

@@ -24,4 +24,16 @@
     /* Tamaño menu activo */
     --font-subMenu: 15px;
 
+    --card-bg: #1e293b;       /* Fondo de las tarjetas */
+    --text-white: #f8fafc;    /* Texto principal */
+    --text-gray: #94a3b8;     /* Texto secundario */
+    --accent-orange: #f97316; /* Color de acento/energía */
+    
+    /* Colores de marca originales para los hovers */
+    --instagram-color: #e1306c;
+    --facebook-color: #1877f2;
+    --x-color: #000000;
+    --whatsapp-color: #25d366;
+
 }
+

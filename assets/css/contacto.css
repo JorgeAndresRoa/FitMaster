@@ -1,0 +1,672 @@
+body {
+    background-image: url("../img/home/bgHorarioEvento.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: solid 1px var(--color-primary);
+}
+
+.containerContacto {
+    width: 100%;
+}
+
+/*! TITULO */
+
+.tituloContacto {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.tituloContacto h1 {
+    margin-bottom: 15px;
+    color: var(--color-primary);
+    font-size: var(--font-active);
+    text-transform: uppercase;
+}
+
+.tituloContacto p {
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: var(--font-size);
+    color: var(--color-light);
+}
+
+/* ! FORMULARIO DE CONTACTO */
+
+#formularioContacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*? titulo formulario de contacto  */
+.titulosFormulario {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+}
+
+.titulosFormulario h2 {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: var(--font-size);
+    width: 50%;
+}
+
+.titulosFormulario .linea {
+    border: solid 2px var(--color-light);
+    width: 40%;
+}
+
+/* ? contenedor del formulario */
+
+#formContainer {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formGroup {
+    padding: 10px;
+
+    /* background-color: #fff; */
+
+}
+
+input,
+select {
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--color-primary);
+    /* Cambia el color del borde a azul */
+    background-color: #f0f7ff;
+    /* Añade un fondo azul muy claro */
+    box-shadow: 0 0 8px var(--color-primary);
+    /* Añade un brillo alrededor */
+}
+
+select:focus {
+    border-color: var(--color-primary);
+    /* Cambia el color del borde a azul */
+    background-color: #f0f7ff;
+    /* Añade un fondo azul muy claro */
+    box-shadow: 0 0 8px var(--color-primary);
+    /* Añade un brillo alrededor */
+}
+
+
+textarea {
+    padding: 40px;
+    width: 100%;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    border-color: var(--color-primary);
+    /* Cambia el color del borde a azul */
+    background-color: #f0f7ff;
+    /* Añade un fondo azul muy claro */
+    box-shadow: 0 0 8px var(--color-primary);
+    /* Añade un brillo alrededor */
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: solid 1.5px var(--color-light);
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: var(--font-text);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-bg);
+    border: solid 1.5px var(--color-primary);
+}
+
+/* ! SECCION COMO LLEGAR */
+
+/*? titulo seccion */
+#comoLlegar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.titulosLlegar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+}
+
+.titulosLlegar h2 {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: var(--font-size);
+    width: 30%;
+}
+
+.titulosLlegar .linea {
+    border: solid 2px var(--color-light);
+    width: 40%;
+}
+
+/*? mapa ubicacion  */
+.mapaUbicacion {
+    width: 80%;
+    display: flex;
+}
+
+iframe {
+    border-radius: 8px;
+    width: 65%;
+}
+
+.linksLlegada {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.linksLlegada img {
+    width: 130px;
+}
+
+
+.transporte1 a,
+.transporte2 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+/*! REDES SOCIALES  */
+
+/*? titulo redes sociales  */
+
+.titulosRedesSociales {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.titulosRedesSociales h2 {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: var(--font-size);
+    width: 50%;
+}
+
+.titulosRedesSociales .linea {
+    border: solid 2px var(--color-light);
+    width: 70%;
+}
+
+/* --- Estructura de la Sección --- */
+.social-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: var(--bg-dark);
+}
+
+.social-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Encabezado --- */
+.social-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.social-header h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: var(--text-white);
+}
+
+.social-header h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-orange);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.social-header p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+}
+
+/* --- Grilla CSS Grid --- */
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* --- Tarjetas Estilo General --- */
+.social-card {
+    background-color: var(--color-bg);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--color-light);
+}
+
+.card-facebook::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -35%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(6, 69, 241, 0.50) 0%, transparent 70%);
+    z-index: 1;
+}
+
+.card-x::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -35%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(246, 246, 246, 0.5) 0%, transparent 70%);
+    z-index: 1;
+}
+
+.social-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card-content {
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icon, .tiktok-custom {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+
+.social-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.social-card p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    flex-grow: 1;
+    /* Empuja el botón al fondo si hay poco texto */
+}
+
+/* --- Botones --- */
+.btn-social {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-white);
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- Comportamiento Individual por Red (Hovers) --- */
+
+/* Instagram (Destacado en tamaño) */
+.card-instagram {
+    grid-column: span 2;
+    grid-row: span 1;
+    /* Efecto estético de fondo simulando el feed energético */
+    background: var(--color-bg);
+}
+
+.card-instagram::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(225, 48, 108, 0.15) 0%, transparent 70%);
+    z-index: 1;
+}
+
+.card-instagram:hover .social-icon {
+    color: var(--instagram-color);
+}
+
+.card-instagram:hover .btn-social {
+    background-color: var(--instagram-color);
+    border-color: var(--instagram-color);
+}
+
+/* Facebook */
+.card-facebook:hover .social-icon {
+    color: var(--facebook-color);
+}
+
+.card-facebook:hover .btn-social {
+    background-color: var(--facebook-color);
+    border-color: var(--facebook-color);
+}
+
+/* X (Twitter) */
+.card-x:hover .tiktok-custom {
+    color: rgb(192, 186, 186)
+}
+
+.card-x:hover .btn-social {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+/* WhatsApp (Fila de conversión horizontal de ancho completo) */
+.card-whatsapp {
+    grid-column: span 4;
+    background: linear-gradient(90deg, #000000 0%, rgba(37, 211, 102, 0.05) 100%);
+    border: 1px solid rgba(37, 211, 102, 0.1);
+    padding: 25px 40px;
+}
+
+.whatsapp-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.whatsapp-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.whatsapp-info .social-icon {
+    margin-bottom: 0;
+    color: var(--whatsapp-color);
+    font-size: 3rem;
+}
+
+.card-whatsapp p {
+    margin-bottom: 0;
+}
+
+.btn-whatsapp {
+    padding: 14px 32px;
+    background-color: var(--whatsapp-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-whatsapp:hover {
+    border-color: var(--whatsapp-color);
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+/* --- Responsive (Adaptabilidad Móvil) --- */
+@media (max-width: 1024px) {
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-whatsapp {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-instagram,
+    .card-whatsapp {
+        grid-column: span 1;
+    }
+
+    .whatsapp-layout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .btn-whatsapp {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*! SECCION DE HORARIOS  */
+
+#horarios {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*? titulo horarios  */
+
+.titulosHorario {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+}
+
+.titulosHorario h2 {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: var(--font-size);
+    width: 50%;
+}
+
+.titulosHorario .linea {
+    border: solid 2px var(--color-light);
+    width: 100%;
+}
+
+/* Contenedor de la Sección */
+
+
+.schedule-section {    
+    width: 100%;
+    /* Flexbox para alinear el título, subtítulo y tarjetas verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedule-section h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.schedule-section h2 span {
+    color: var(--primary-color);
+}
+
+.schedule-subtitle {
+    color: var(--text-muted);
+    margin: 0 0 40px 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Contenedor de Tarjetas con Flexbox */
+.schedule-flex-container {
+    display: flex;
+    flex-direction: row;
+    /* Tarjetas en fila por defecto */
+    flex-wrap: wrap;
+    /* Permite que bajen si no caben en la pantalla */
+    justify-content: center;
+    gap: 20px;
+    width: 80%;    
+}
+
+/* Tarjeta de Horario */
+.schedule-card {
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    color: var(--color-light);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 2px solid var(--color-primary);
+
+    /* Flexbox interno: Configura la tarjeta como columna */
+    display: flex;
+    flex-direction: column;
+
+    /* Flex-grow y flex-basis controlan el tamaño responsivo */
+    flex: 1 1 280px;
+    width:33%;
+    /* Evita que se estiren demasiado en pantallas enormes */
+    box-sizing: border-box;        
+}
+
+.schedule-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Resaltado para el día actual o más importante */
+.schedule-card.highlight {
+    border-color: var(--color-primary);
+    position: relative;
+}
+
+.schedule-card.highlight .badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;    
+}
+
+.schedule-card h3 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--text-light);
+    text-align: center;
+}
+
+/* Filas de horario con Flexbox */
+.time-slot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Separa el texto a la izquierda y derecha */
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.time-slot:last-child {
+    border-bottom: none;
+}
+
+.time-label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.time-value {
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+/* Estado cerrado */
+.closed {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+}
+
+/* Nota al pie */
+.schedule-footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: var(--color-light);
+    text-align: center;
+}

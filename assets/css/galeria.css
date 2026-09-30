@@ -179,6 +179,17 @@ FILTROS
     background-color: #E53935;
     color: white;
 }
+/* Agrega una flecha personalizada usando un pseudoelemento */
+.desplegable-titulo::after {
+  content: "▶";
+  font-size: 0.8rem;
+  transition: transform 0.5s ease;
+}
+
+/* Rota la flecha cuando el contenedor está abierto [open] */
+.desplegableGaleria[open] .desplegable-titulo::after {
+  transform: rotate(90deg);
+}
 
 
 /* =========================================
